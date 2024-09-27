@@ -42,7 +42,7 @@ Siga as instruções abaixo para executar o projeto na sua máquina, seja utiliz
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/djhonatah/UNIDADE1_LEDA_PASSWORDS.git
+https://github.com/djhonatah/UNIDADE1_LEDA_PASSWORDS.git
 ````
 
 2. Abra o projeto na sua IDE Java.
