@@ -2,8 +2,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class CreateCasesByDate {
-    GetVariables csvToArray = new GetVariables();
-    String[] data = csvToArray.readDataToArray();
+    InputVar csvToArray = new InputVar();
+    String[] data = csvToArray.arrayData();
 
     Comparator<String> comparatorDateCrescent = Comparator.comparing((String str) -> {
         String[] piecesDate = str.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1)[3].split(" ")[0].split("/");

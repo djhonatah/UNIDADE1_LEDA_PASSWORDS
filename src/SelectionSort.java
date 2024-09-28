@@ -4,7 +4,7 @@ public class SelectionSort {
     CreateFileCsv create = new CreateFileCsv();
 
     public void length(String[] data,String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -41,7 +41,7 @@ public class SelectionSort {
     }
 
     public void month(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -78,7 +78,7 @@ public class SelectionSort {
     }
 
     public void date(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();

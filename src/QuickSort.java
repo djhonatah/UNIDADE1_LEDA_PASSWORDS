@@ -2,7 +2,7 @@ public class QuickSort {
     CreateFileCsv create = new CreateFileCsv();
 
     public void length(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -26,7 +26,7 @@ public class QuickSort {
         create.criaCsv(copiaDados, filename);
     }
 
-    private void quickSortLength(String[] arr, int low, int high, GetVariables v) {
+    private void quickSortLength(String[] arr, int low, int high, InputVar v) {
         if (low < high) {
             int pi = partitionLength(arr, low, high, v);
 
@@ -35,7 +35,7 @@ public class QuickSort {
         }
     }
 
-    private int partitionLength(String[] arr, int low, int high, GetVariables v) {
+    private int partitionLength(String[] arr, int low, int high, InputVar v) {
         String pivot = arr[high];
         int i = (low - 1);
 
@@ -59,7 +59,7 @@ public class QuickSort {
     // -----------------------------------------------------------------------------------------
 
     public void month(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -83,7 +83,7 @@ public class QuickSort {
         create.criaCsv(copiaDados, filename);
     }
 
-    private void quickSortMonth(String[] array, int inicio, int fim, GetVariables v) {
+    private void quickSortMonth(String[] array, int inicio, int fim, InputVar v) {
         if (inicio < fim) {
             int posicaoPivo = partitionMonth(array, inicio, fim, v);
             quickSortMonth(array, inicio, posicaoPivo - 1, v);
@@ -91,7 +91,7 @@ public class QuickSort {
         }
     }
 
-    private int partitionMonth(String[] array, int inicio, int fim, GetVariables v) {
+    private int partitionMonth(String[] array, int inicio, int fim, InputVar v) {
         String pivo = array[fim];
         int i = inicio - 1;
         for (int j = inicio; j < fim; j++) {
@@ -111,7 +111,7 @@ public class QuickSort {
     // -----------------------------------------------------------------------------------------
 
     public void date(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -135,7 +135,7 @@ public class QuickSort {
         create.criaCsv(copiaDados, filename);
     }
 
-    private void quickSortDate(String[] array, int inicio, int fim, GetVariables v) {
+    private void quickSortDate(String[] array, int inicio, int fim, InputVar v) {
         if (inicio < fim) {
             int posicaoPivo = partitionDate(array, inicio, fim, v);
             quickSortDate(array, inicio, posicaoPivo - 1, v);
@@ -143,7 +143,7 @@ public class QuickSort {
         }
     }
 
-    private int partitionDate(String[] array, int inicio, int fim, GetVariables v) {
+    private int partitionDate(String[] array, int inicio, int fim, InputVar v) {
         String pivo = array[fim];
         int i = inicio - 1;
         for (int j = inicio; j < fim; j++) {

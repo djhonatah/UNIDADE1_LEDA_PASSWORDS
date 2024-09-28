@@ -2,7 +2,7 @@ public class CountingSort {
     CreateFileCsv create = new CreateFileCsv();
 
     public void length(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -26,7 +26,7 @@ public class CountingSort {
         create.criaCsv(copiaDados, filename);
     }
 
-    private void countingSortLength(String[] array, GetVariables v) {
+    private void countingSortLength(String[] array, InputVar v) {
         int n = array.length;
         String[] saida = new String[n];
 
@@ -54,7 +54,7 @@ public class CountingSort {
     // -----------------------------------------------------------
 
     public void month(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -78,7 +78,7 @@ public class CountingSort {
         create.criaCsv(copiaDados, filename);
     }
 
-    private void countingSortMonth(String[] array, GetVariables v) {
+    private void countingSortMonth(String[] array, InputVar v) {
         int n = array.length;
         String[] saida = new String[n];
 
@@ -105,7 +105,7 @@ public class CountingSort {
     //-----------------------------------------------------------------------
 
     public void date(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -129,7 +129,7 @@ public class CountingSort {
         create.criaCsv(copiaDados, filename);
     }
 
-    private void countingSortDate(String[] array, GetVariables v) {
+    private void countingSortDate(String[] array, InputVar v) {
         int n = array.length;
         String[] saida = new String[n];
 

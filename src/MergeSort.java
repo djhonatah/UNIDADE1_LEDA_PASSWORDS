@@ -2,7 +2,7 @@ public class MergeSort {
     CreateFileCsv create = new CreateFileCsv();
 
     public void length(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -26,7 +26,7 @@ public class MergeSort {
         create.criaCsv(copiaDados, filename);
     }
 
-    private void mergeSortLength(String[] array, int inicio, int fim, GetVariables v) {
+    private void mergeSortLength(String[] array, int inicio, int fim, InputVar v) {
         if (inicio < fim) {
             int meio = (inicio + fim) / 2;
             mergeSortLength(array, inicio, meio, v);
@@ -35,7 +35,7 @@ public class MergeSort {
         }
     }
 
-    private void mergeLength(String[] array, int inicio, int meio, int fim, GetVariables v) {
+    private void mergeLength(String[] array, int inicio, int meio, int fim, InputVar v) {
         int n1 = meio - inicio + 1;
         int n2 = fim - meio;
 
@@ -77,7 +77,7 @@ public class MergeSort {
     // --------------------------------------------------------------------
 
     public void month(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -101,7 +101,7 @@ public class MergeSort {
         create.criaCsv(copiaDados, filename);
     }
 
-    private void mergeSortMonth(String[] array, int inicio, int fim, GetVariables v) {
+    private void mergeSortMonth(String[] array, int inicio, int fim, InputVar v) {
         if (inicio < fim) {
             int meio = (inicio + fim) / 2;
             mergeSortMonth(array, inicio, meio, v);
@@ -110,7 +110,7 @@ public class MergeSort {
         }
     }
 
-    private void mergeMonth(String[] array, int inicio, int meio, int fim, GetVariables v) {
+    private void mergeMonth(String[] array, int inicio, int meio, int fim, InputVar v) {
         int n1 = meio - inicio + 1;
         int n2 = fim - meio;
 
@@ -152,7 +152,7 @@ public class MergeSort {
     // -----------------------------------------------------------------------------------
 
     public void date(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -176,7 +176,7 @@ public class MergeSort {
         create.criaCsv(copiaDados, filename);
     }
 
-    private void mergeSortDate(String[] array, int inicio, int fim, GetVariables v) {
+    private void mergeSortDate(String[] array, int inicio, int fim, InputVar v) {
         if (inicio < fim) {
             int meio = (inicio + fim) / 2;
             mergeSortDate(array, inicio, meio, v);
@@ -185,7 +185,7 @@ public class MergeSort {
         }
     }
 
-    private void mergeDate(String[] array, int inicio, int meio, int fim, GetVariables v) {
+    private void mergeDate(String[] array, int inicio, int meio, int fim, InputVar v) {
         int n1 = meio - inicio + 1;
         int n2 = fim - meio;
 

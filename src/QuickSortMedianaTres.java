@@ -3,7 +3,7 @@ public class QuickSortMedianaTres {
     CreateFileCsv create = new CreateFileCsv();
 
     public void length(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -27,7 +27,7 @@ public class QuickSortMedianaTres {
         create.criaCsv(copiaDados, filename);
     }
 
-    private void quickSortLength(String[] array, int inicio, int fim, GetVariables v) {
+    private void quickSortLength(String[] array, int inicio, int fim, InputVar v) {
         if (inicio < fim) {
             int meio = partitionLength(array, inicio, fim, v);
             quickSortLength(array, inicio, meio, v);
@@ -35,7 +35,7 @@ public class QuickSortMedianaTres {
         }
     }
 
-    private int partitionLength(String[] array, int inicio, int fim, GetVariables v) {
+    private int partitionLength(String[] array, int inicio, int fim, InputVar v) {
         int meio = (inicio + fim) / 2;
 
         if (v.getSizePassword(array[inicio]) < v.getSizePassword(array[meio]))
@@ -70,7 +70,7 @@ public class QuickSortMedianaTres {
     // -----------------------------------------------------------------------------
 
     public void month(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -94,7 +94,7 @@ public class QuickSortMedianaTres {
         create.criaCsv(copiaDados, filename);
     }
 
-    private void quickSortMonth(String[] array, int inicio, int fim, GetVariables v) {
+    private void quickSortMonth(String[] array, int inicio, int fim, InputVar v) {
         if (inicio < fim) {
             int meio = partitionMonth(array, inicio, fim, v);
             quickSortMonth(array, inicio, meio, v);
@@ -102,7 +102,7 @@ public class QuickSortMedianaTres {
         }
     }
 
-    private int partitionMonth(String[] array, int inicio, int fim, GetVariables v) {
+    private int partitionMonth(String[] array, int inicio, int fim, InputVar v) {
         int meio = (inicio + fim) / 2;
 
         if (v.getMesData(array[inicio]) > v.getMesData(array[meio]))
@@ -137,7 +137,7 @@ public class QuickSortMedianaTres {
     // -----------------------------------------------------------------------------------
 
     public void date(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -161,7 +161,7 @@ public class QuickSortMedianaTres {
         create.criaCsv(copiaDados, filename);
     }
 
-    private void quickSortDate(String[] array, int inicio, int fim, GetVariables v) {
+    private void quickSortDate(String[] array, int inicio, int fim, InputVar v) {
         if (inicio < fim) {
             int meio = partitionDate(array, inicio, fim, v);
             quickSortDate(array, inicio, meio, v);
@@ -169,7 +169,7 @@ public class QuickSortMedianaTres {
         }
     }
 
-    private int partitionDate(String[] array, int inicio, int fim, GetVariables v) {
+    private int partitionDate(String[] array, int inicio, int fim, InputVar v) {
         int meio = (inicio + fim) / 2;
 
         if (v.getData(array[inicio]) > v.getData(array[meio]))

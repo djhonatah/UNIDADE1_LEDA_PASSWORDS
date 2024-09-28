@@ -2,7 +2,7 @@ public class InsertionSort {
     CreateFileCsv create = new CreateFileCsv();
 
     public void length(String[] data,String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -35,7 +35,7 @@ public class InsertionSort {
     }
 
     public void month(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -68,7 +68,7 @@ public class InsertionSort {
     }
 
     public void date(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();

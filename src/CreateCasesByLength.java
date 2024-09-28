@@ -2,8 +2,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class CreateCasesByLength {
-    GetVariables csvToArray = new GetVariables();
-    String[] data = csvToArray.readDataToArray();
+    InputVar csvToArray = new InputVar();
+    String[] data = csvToArray.arrayData();
 
     Comparator<String> comparatorLengthPasswordCrescent = Comparator.comparingInt((String str) -> {
         if (str == null) {

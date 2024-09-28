@@ -2,7 +2,7 @@ public class HeapSort {
     CreateFileCsv create = new CreateFileCsv();
 
     public void length(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -26,7 +26,7 @@ public class HeapSort {
         create.criaCsv(copiaDados, filename);
     }
 
-    private void heapSortLength(String[] array, GetVariables v) {
+    private void heapSortLength(String[] array, InputVar v) {
         int n = array.length;
 
         for (int i = n / 2 - 1; i >= 0; i--)
@@ -41,7 +41,7 @@ public class HeapSort {
         }
     }
 
-    private void heapifyLength(String[] array, int n, int i, GetVariables v) {
+    private void heapifyLength(String[] array, int n, int i, InputVar v) {
         int largest = i;
         int left = 2 * i + 1;
         int right = 2 * i + 2;
@@ -64,7 +64,7 @@ public class HeapSort {
     // ------------------------------------------------------
 
     public void month(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -88,7 +88,7 @@ public class HeapSort {
         create.criaCsv(copiaDados, filename);
     }
 
-    private void heapSortMonth(String[] array, GetVariables v) {
+    private void heapSortMonth(String[] array, InputVar v) {
         int n = array.length;
 
         for (int i = n / 2 - 1; i >= 0; i--)
@@ -103,7 +103,7 @@ public class HeapSort {
         }
     }
 
-    private void heapifyMonth(String[] array, int n, int i, GetVariables v) {
+    private void heapifyMonth(String[] array, int n, int i, InputVar v) {
         int largest = i;
         int left = 2 * i + 1;
         int right = 2 * i + 2;
@@ -126,7 +126,7 @@ public class HeapSort {
     //--------------------------------------------------------------------------
 
     public void date(String[] data, String nameCase) {
-        GetVariables v = new GetVariables();
+        InputVar v = new InputVar();
         String[] copiaDados = data.clone();
 
         long startTime = System.nanoTime();
@@ -150,7 +150,7 @@ public class HeapSort {
         create.criaCsv(copiaDados, filename);
     }
 
-    private void heapSortDate(String[] array, GetVariables v) {
+    private void heapSortDate(String[] array, InputVar v) {
         int n = array.length;
 
         for (int i = n / 2 - 1; i >= 0; i--)
@@ -165,7 +165,7 @@ public class HeapSort {
         }
     }
 
-    private void heapifyDate(String[] array, int n, int i, GetVariables v) {
+    private void heapifyDate(String[] array, int n, int i, InputVar v) {
         int largest = i;
         int left = 2 * i + 1;
         int right = 2 * i + 2;
